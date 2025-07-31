@@ -774,8 +774,6 @@ client.setBufferSize(1024);
 
   setupRadio();
 
-
-
   digitalWrite(LED_PIN, HIGH);  // LED off after setup complete
 
 }
@@ -789,8 +787,6 @@ void loop() {
   webServer.handleClient();
 
   client.loop();
-
-
 
   reconnectMQTT();
 
